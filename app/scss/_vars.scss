@@ -1,0 +1,42 @@
+// $text: #546e7a;
+// $red: #e74c3c;
+// $green: #8bc34a;
+
+// $main-color: #FFA501;
+
+
+// @mixin f300 {
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 300;
+//   }
+
+// @mixin f500 {
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 500;
+// }
+
+// @mixin f700 {
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 700;
+// }
+
+// @mixin before_circle {
+//     &:before {
+//         content: '';
+//         position: absolute;
+//         z-index: -1;
+//         top: -25%;
+//         left: 0;
+//         width: 36px;
+//         height: 36px;
+//         border-radius: 100%;
+//         background: $main-color;
+//     }
+// }
+
+// ставить через @include before_circle;
+// &__title {
+//     position: relative;
+//     padding: 1px 0 0 12px;
+//     @include before_circle;
+// }
