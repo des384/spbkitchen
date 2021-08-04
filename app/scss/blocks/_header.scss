@@ -1,0 +1,67 @@
+.header__inner{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px 0;    
+}
+.logo{
+    img{
+        width: 100%;
+    }
+}
+.menu{
+    display: block;
+    padding: 29px 0 16px;
+}
+.menu__list{
+    display: flex;    
+}
+.menu__list-link+.menu__list-link {
+    margin-left: 35px;
+}
+
+.menu__list-link{
+    a{       
+    color: #3f3030;
+    font-family: 'Arno Pro';
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-bottom: 1px solid transparent;
+    transition: all .3s linear;
+    }
+    a:hover{
+       color: $second-color;
+       border-bottom: 1px solid $second-color;
+    }
+}
+.header__tel-box{
+    font-family: 'Arno Pro';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    padding: 29px 0 16px;
+}
+
+.header__phone{
+    text-decoration: none;    
+    color: #181818;   
+    &:hover{        
+        opacity: .7;  
+    }
+}
+
+.header__phone:before{
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: url(../../images/tel.svg) no-repeat 50%;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+
