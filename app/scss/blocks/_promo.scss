@@ -1,0 +1,56 @@
+.promo{
+    padding: 100px 120px;
+}
+
+fieldset{
+    border:none;
+    border-top: 1px solid #DFD7D3;
+}
+
+legend{
+    text-align: center;
+    padding: 0 60px;
+    margin-bottom: 20px;    
+}
+
+.promo__text{
+    max-width: 975px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Circe';
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+.promo__items{
+    max-width: 965px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.promo__item{
+    max-width: 255px;    
+   &-icon{
+        margin-bottom: 30px;
+        img{
+        opacity: 1;
+        transition: .5s;
+        }        
+    }
+    &-icon:hover{
+        img{
+            opacity: .6;
+            transition: .5s;
+            }
+    }
+    &-desc{        
+        font-family: 'Circe';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;        
+        
+    }
+}    
+
+

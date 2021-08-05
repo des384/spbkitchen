@@ -87,7 +87,17 @@
         top: 0;
     }
     
+   /*Title*/
+.main__title{
+    font-family: 'Arno Pro';
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 55px;
+    color: #181818;
+    letter-spacing: 0.01em;
+}  
     
+@import 'blocks/promo';    
        
 
 
