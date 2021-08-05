@@ -1,0 +1,42 @@
+.intro__bg{
+    position: relative;
+    background: url(../../images/intro-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 266px 0;    
+    &:before{
+        content: "";
+        position: absolute;  
+        display: block;     
+        height: 100%;
+        width: 55%;
+        background-color:rgba(69, 69, 69, 0.8);
+        backdrop-filter: blur(2px);
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 0; 
+             
+    }
+}
+.intro__block{
+    position: relative;
+    max-width: 630px;
+    z-index: 1;
+}
+.intro__title{
+    font-family: 'Arno Pro';
+    font-weight: 300;
+    color: #fff;
+    font-size: 65px;
+    line-height: 65px;
+    margin-bottom: 50px;
+}
+.intro__subtitle{
+    font-family: 'Circe';
+    font-weight: 350;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 96px;
+}
+

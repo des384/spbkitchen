@@ -22,6 +22,73 @@
 
 
 @import 'blocks/header';
+@import 'blocks/intro';
+
+/*Buttons*/
+
+.btn{
+    padding: 24px 44px 24px 42px;
+    border: 2px solid #DBDBDB;
+    border-right: transparent;
+    font-family: 'Circe';
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+    display: inline-block;
+    position: relative;
+    transition: .3s;    
+        
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    background: url(../images/btn-arrow.svg) no-repeat center center;
+    width: 65px;
+    height: 10px;
+    right: -46px;
+    bottom: 31px;
+    transition: .3s;
+}
+.btn:hover{
+    border: 2px solid #ca6d38;
+    border-right: transparent;
+    transition: .3s;
+}
+.btn:hover .btn__text::after{
+    background:#ca6d38;
+    transition: .3s;
+}
+.btn:hover .btn__text::before{
+    background:#ca6d38;
+    transition: .3s;
+}
+.btn:hover::after{
+    right: -62px;
+    transition: .3s;
+}
+
+.btn__text::after,
+.btn__text::before{
+     content: "";
+     position: absolute;
+     display: block;
+     background: #DBDBDB;
+     width: 2px;
+     height: 20px;
+     right: 0;
+     transition: .3s;
+     
+    }
+    .btn__text::after{
+        bottom: 0;        
+    }
+    .btn__text::before{
+        top: 0;
+    }
+    
+    
+       
 
 
 @import 'blocks/media';
