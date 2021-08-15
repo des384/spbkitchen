@@ -1,0 +1,220 @@
+.portfolio{
+    padding: 0px 0 120px;    
+    background-image: linear-gradient(#F3F1EF);
+    background-repeat: repeat-x;    
+    background-size: auto 55%;
+    background-position: 50% 50%;
+    background-attachment: scroll;
+    &__btn{
+    text-align: center;    
+    margin-bottom: 50px;
+    }
+}
+
+.portfolio__button{
+    padding: 0;    
+    font-family: 'Circe';
+    font-weight: 350;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    position: relative;
+    transition: .3s;
+    text-transform: none;
+    &:hover{
+        color: #CA6D38;
+    }
+    &:active{
+        color: #CA6D38;
+    }
+   
+}
+
+.portfolio__button--active{
+        color: #CA6D38;        
+        // border-bottom: 1px solid #CA6D38;    
+
+    }  
+    .portfolio__button--active::after{
+        text-align: center;
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 80px);
+        background-color: #CA6D38;
+        left: 41px;
+        bottom: 3px; 
+        transition: all .5s;
+    }
+
+.portfolio__button+.portfolio__button{
+    margin-left: 30px;    
+}
+
+.portfolio__items{
+     display: flex;
+     justify-content: center;
+     align-items: center;           
+      flex-wrap: wrap;
+      max-width: 1230px;      
+      margin-bottom: 50px;
+      
+    &-box{
+      display: block;        
+      width: 620px;
+      height: 394px;
+      max-height: 100%;
+      max-width: 100%;
+      margin: 0 5px 10px 5px; 
+      position: relative; 
+      overflow: hidden;  
+                     
+      img{          
+          width: 100%;
+          height: 100%;
+          object-fit: cover;          
+        // // на 620 поставить max-height в img 
+        // убрать max-width: 100% и max-height: 100%; 
+        // в box          
+      } 
+           
+    } 
+          
+    &-box-2{ 
+    display: block;         
+    width: 290px;
+    height: 394px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 5px 10px 5px;
+    position: relative; 
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }      
+    }     
+}
+.portfolio__items-more{
+    margin-bottom: 10px;
+}
+
+.items__mask-box{    
+    background: transparent;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    .item__link{
+        font-family: 'Arno Pro';
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        color:#fff;
+        border-bottom: 1px solid #fff;
+        position: absolute;
+        bottom:20px;
+        left: 25px;
+        bottom: 51px;
+        visibility: hidden;       
+        
+    }
+    .item__desc,
+    .item__desc-right{
+        font-family: 'Circe';
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 26px;
+        color:#fff;
+        position: absolute;
+        left: 25px;
+        bottom:20px;
+        visibility: hidden;
+    }
+    .item__desc-right{
+        left: auto;
+        right: 25px;
+    }
+}
+.items__mask-box:hover{
+    background: linear-gradient(0deg, rgba(69, 69, 69, 0.65), rgba(69, 69, 69, 0.65));    
+  .item__link,
+  .item__desc,
+  .item__desc-right{      
+      visibility: visible;                 
+  }
+}
+
+.portfolio__items-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 24px 44px;
+    font-family: 'Circe';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #454545;
+    background: #fff;
+    border: 2px solid #DFD7D3;    
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        border: 2px solid #CA6D38;
+        transition: .3s;   
+    }
+    &:active{
+        border: 2px solid #CA6D38;
+    }
+}
+
+/*кнопка Подробнее*/
+
+.portfolio__navigation{
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+ ul li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 40px;
+	cursor: pointer;  
+}
+
+}
+
+
+.hide {
+    opacity: 1;
+    // animation-name: a1;
+    // animation-duration: 2s;
+    // animation-fill-mode: forwards;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+//   @keyframes a1{
+//     to {
+//           opacity: 0;
+//           min-height: 0; 
+//           min-width: 0;
+//           padding: 0;
+//           margin: 0;
+//           border: 0;
+//     }	
+//   }
+
+
+
+
