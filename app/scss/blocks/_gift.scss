@@ -1,0 +1,50 @@
+.gift{
+    background-image: url(../../images/gift-bg.png); 
+    background-repeat: no-repeat;
+    background-position: center center;   
+    background-size: cover;
+    position: relative;    
+    &:after{
+       content: "";
+       position: absolute;
+       display: block;
+       height: 100%;
+       width: 100%;
+       background-color:rgba(69, 69, 69, 0.8);   
+       left: 0;
+       top: 0;
+       z-index: 10;       
+    }
+   
+    &__blog{
+        display: flex; 
+        align-items: flex-start;     
+        z-index: 20;
+        position: relative;
+        .gift__info{
+            padding: 90px 0;
+            max-width: 600px;   
+            
+        }
+    }  
+    &__info-title{
+        font-family: 'Arno Pro';
+        font-weight: 300;
+        font-size: 55px;
+        line-height: 55px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &__info-text{
+        font-family: 'Circe';
+        font-weight: 350;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

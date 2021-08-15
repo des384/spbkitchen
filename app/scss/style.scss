@@ -51,13 +51,14 @@
     transition: .3s;
 }
 .btn:hover{
-    border: 2px solid #ca6d38;
+    border: 2px solid #ca6d38;    
     border-right: transparent;
     transition: .3s;
 }
 .btn:hover .btn__text::after{
     background:#ca6d38;
     transition: .3s;
+
 }
 .btn:hover .btn__text::before{
     background:#ca6d38;
@@ -66,6 +67,7 @@
 .btn:hover::after{
     right: -62px;
     transition: .3s;
+    
 }
 
 .btn__text::after,
@@ -98,7 +100,8 @@
 }  
     
 @import 'blocks/promo'; 
-@import 'blocks/portfolio';   
+@import 'blocks/portfolio';
+@import 'blocks/gift';   
        
 
 
