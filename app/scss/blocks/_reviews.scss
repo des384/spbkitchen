@@ -1,0 +1,138 @@
+.reviews{
+   padding: 120px 0;
+
+   &__inner{         
+    width: 1150px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    
+   }
+   &__img-wrapper{       
+       width: 518px;
+       height: 534px;
+       position: absolute;
+       z-index: 30;
+       right: -50px;
+       bottom: -50px;
+       img{           
+           height: 100%;
+           width: 100%;
+           object-fit: cover;
+       }
+   }
+   &__item{       
+       display: flex;
+       justify-content: space-between;      
+       box-shadow: 0px 0px 20px rgba(69, 69, 69, 0.15);
+       position: relative;
+       padding-top: 45px;       
+       &-inner{          
+        padding: 50px;
+           margin: 0 auto;
+           overflow: hidden;
+           
+       }
+       &-title{
+        font-family: 'Arno Pro';
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 475px;
+        margin-bottom: 15px;
+       }
+       &-col{
+        padding: 0px 0 60px 50px;
+       }
+       &-text{
+        font-family: 'Circe';
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 26px;
+        overflow: hidden; 
+        max-height: 312px;   
+        max-width: 475px;
+        margin-bottom: 25px;
+       }
+       &-author{
+        font-family: 'Circe';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+       }
+   } 
+}
+
+.reviews__nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 527px;
+    width: 100%;
+    margin-top: -23px;
+    position: relative;
+    z-index: 10;    
+    &-container{
+        padding: 0 60px;
+    }
+    span{
+        display: inline-block;
+        width: 90px;
+        height: 11px;
+        cursor:pointer;
+    }
+    &-prev{
+        background-image: url(../../images/slick-left.svg);
+        background-repeat: no-repeat;
+        background-position: center center;        
+    }
+   
+    &-next{
+        background-image: url(../../images/slick-right.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &-prev:hover,
+    &-next:hover{        
+        filter: blur(1px);
+        // filter: drop-shadow(0px 1px 4px #ca6d38);
+        transition: .3s;
+    }    
+
+    .slick-dots{
+        display: flex;          
+        li{
+            button{
+               display: block; 
+               font-size: 0;
+               color: transparent;               
+               height: 11px;
+               width: 11px;
+               margin: 0 10px;
+               padding: 0;
+               cursor: pointer;
+               border: 2px solid #DFD7D3;               
+               border-radius: 50%;      
+               transition: .3s; 
+            }
+            &.slick-active{                
+               button{
+                   background-color: #CA6D38;                   
+                   border-color: #CA6D38;                  
+                   box-shadow: 1px 1px 4px rgba(202, 109, 56, 0.8);
+                //    filter: blur(1px);                   
+               } 
+            }
+        }
+
+        
+        
+    }
+}
+
+
+ 
+    
+ 
+
+
+
