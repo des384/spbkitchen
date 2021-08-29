@@ -1,5 +1,5 @@
 .promo{
-    padding: 100px 120px;
+    padding: 100px 0;
 }
 
 fieldset{
@@ -26,7 +26,7 @@ legend{
 .promo__items{
     max-width: 965px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     margin: 0 auto;
 }
 .promo__item{

@@ -12,6 +12,7 @@ prevArrow: '<span class="reviews__nav-prev"></span>',
 nextArrow: '<span class="reviews__nav-next"></span>',
   });
 });
+/*mask telephon */
 
 $(function () {
 
@@ -112,3 +113,22 @@ $('document').ready(function (){
       $(this).addClass('portfolio__button--active');
   });
 });
+
+
+// $('#clear').click(function () {
+//   $('#input-outer input').val('');
+// });
+
+// const resetBtn = document.querySelector('.invalid-check')
+// const input = document.querySelector('.input')
+// resetBtn.addEventListener('click', () => {
+//   input.value = ''
+// })
+
+const resetBtn = document.querySelector('.invalid-check')
+const input = document.querySelector('.input')
+
+resetBtn.addEventListener('click', () => {
+  input.value = ''
+  
+})

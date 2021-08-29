@@ -1,0 +1,259 @@
+.consultation {
+    position: relative;
+    background-image: url(../../images/consultation-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 90px 0;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgba(92, 92, 92, .8);
+        left: 0;
+        top: 0;
+    }
+
+    &__col {
+        padding: 0 20px;
+    }
+
+    &__wrapper {
+        display: flex;
+        position: relative;
+        z-index: 30;
+
+        input[type=text] {
+            height: 70px;
+            max-width: 495px;
+            width: 100%;
+            border: 2px solid #F3F1EF;
+            margin-bottom: 30px;
+            background-color: transparent;
+            padding: 19px 30px;
+            font-family: 'Circe';
+            font-weight: 350;
+            font-size: 24px;
+            line-height: 32px;
+            color: #fff;
+            outline: none;
+        }
+
+        input:invalid[type=text] {
+            color: #CA6D38;
+
+        }
+
+        input[type=text]:focus {
+            border: 3px solid #F3F1EF;
+        }
+
+        input::placeholder {
+            color: #fff;
+        }
+    }
+
+    &__form-text {
+        font-family: 'Circe';
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 26px;
+        color: #fff;
+        padding-bottom: 5px;
+    }
+
+    /*для галочки справа при валидации+кнопка reset*/
+}
+
+.consultation__form {
+    position: relative;
+
+    // input.input:focus{
+    //     border: 2px solid #CA6D38;
+    // }
+
+
+    .invalid-check {
+        cursor: pointer;
+        background: url("../../images/check-invalid.svg") no-repeat;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 64px;
+        transform: translateY(-50%);
+        left: 445px;
+        width: 16px;
+        height: 16px;
+        visibility: hidden;
+    }
+
+
+
+    input.input:focus:valid {
+        background: url("../../images/check-valid.svg") no-repeat 95% 50%;
+        background-size: 25px;
+        background-color: transparent;
+    }
+
+    // input:required:focus:invalid {
+    //     background: url("../../images/check-invalid.svg") no-repeat 95% 50% lightsalmon;
+    //     background-size: 25px;
+    //     background-color: transparent;
+    //   }
+
+
+    // input:invalid:focus + .invalid-check{
+    //     visibility: visible;   
+
+    // }
+
+    input:invalid+.invalid-check {
+        visibility: visible
+    }
+}
+
+/*галочка на чекбокс*/
+.form__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 30px;
+    max-width: 510px;
+
+
+    &-input {
+        left: -5px;
+        top: 0;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        opacity: 0;
+    }
+
+    &-text {
+        margin-left: 13px;
+        // max-width: 400px;
+        
+    }
+}
+
+.check-icon {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 22px;
+    left: 1px;
+    top: 3px;
+    border: 1px solid #F3F1EF;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../images/checkbox.svg);
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 12px;
+        transition: .2s;
+        left: 2px;
+        top: 5px;
+        opacity: 0;
+    }
+
+}
+
+input:checked+.check-icon:before {
+    opacity: 1;
+}
+
+.form__check-link {
+    text-transform: none;
+    color: #fff;
+    &:hover{
+        color: #CA6D38;
+    }
+    
+
+    //    text-decoration: underline;
+    position: relative;
+}
+
+.form__check-link:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 1px;
+    background-color: #fff;
+
+}
+.form__check-link:hover:before{
+    background-color: #CA6D38
+}
+.consultation__form-btn{
+    display: block;    
+    padding: 24px 44px;
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #181818;
+    background: #DFD7D3;
+    border: 2px solid #DFD7D3;    
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        border: 2px solid #CA6D38;
+        transition: .3s;          
+    }
+    &:active{
+        border: 2px solid #CA6D38;
+    }
+}
+.consultation__col-right{
+    padding-top: 120px;
+}
+.consultation__icons{
+    position: relative;
+    margin-top: 67px;
+    ul,li{
+        list-style: none;        
+    }
+    li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
+        position: relative;
+    }
+    li:before{
+        position: absolute;
+        content: '';
+        background-color: #fff;
+        height: 2px;
+        width: 25px;
+        left: -40px;
+    }
+    &-text{
+        max-width: 700px;
+        width: 100%;
+    }
+    img{
+        margin-right: 25px;
+    }
+}
+.consultation__icons::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 74%;
+    background-color: #fff;
+    left: 0;
+    top: 10%;        
+
+}

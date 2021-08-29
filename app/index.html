@@ -88,6 +88,7 @@
 
     </div>
   </section>
+  
   <section class="portfolio">
     <fieldset>
       <legend>
@@ -256,7 +257,7 @@
   <section class="reviews">
     <fieldset>
       <legend>
-        <h2 class="reviews__title main__title">Наше портфолио</h2>
+        <h2 class="reviews__title main__title">Отзывы клиентов</h2>
       </legend>
     </fieldset>
 
@@ -343,21 +344,80 @@
         </div>
 
       </div>
-    
+
       <div class="reviews__nav-container">
         <div class="reviews__nav">
-            <div class="reviews__nav-dots"></div>
-        </div>    
+          <div class="reviews__nav-dots"></div>
+        </div>
 
-    </div>
+      </div>
     </div>
     </div>
 
+  </section>
+  <section class="consultation">
+    <div class="container">
+      <div class="consultation__wrapper">
+
+        <div class="consultation__col">
+          <h2 class="gift__info-title consultation__title">Консультация дизайнера в офисе или по телефону </h2>
+          <p class="gift__info-text consultation__text">Оставьте заявку и вместе мы сумеем воплотить в реальности ваши
+            задумки и мечты!</p>
+
+          <form action="" class="consultation__form">
+            <p class="consultation__form-text">Ваше имя</p>
+            <input class="input" type="text" placeholder="Ваше имя" name="username" minlength="1"
+              pattern="[A-Za-zА-Яа-яЁё]*">
+
+            <button class="invalid-check" type="button"></button>
+            <span class="valid-check"></span>
+            <p class="consultation__form-text">Контактный телефон</p>
+            <input type="text" placeholder name="phone" class="masked-phone" data-phonemask="+7 (___)___-__-__">
+
+            <label for="conf" class="form__checkbox">
+              <input class="form__checkbox-input" type="checkbox" id="conf" name="conf">
+              <span class="form__checkbox-icon check-icon"></span>
+              <p class="consultation__form-text form__checkbox-text">
+                Я согласен с <a class="form__check-link" href="#">условиями обработки</a>
+                и использования моих персональных данных</p>
+            </label>
+            <button class="consultation__form-btn" type="submit">Получить консультацию дизайнера</button>
+          </form>
+
+        </div>
+
+        <div class="consultation__col consultation__col-right">
+          <p class="gift__info-text consultation__text">А что будет дальше после консультации?</p>
+          <div class="consultation__icons">
+            <ul>
+              <li class="consultation__form-text consultation__icons-text"><img src="images/icon-1.svg"
+                  alt="">Спланируем этапы ремонтных работ и их стоимость</li>
+              <li class="consultation__form-text consultation__icons-text"><img src="images/icon-2.svg"
+                  alt="">Разработаем для вас бесплатный пробный эскиз и смету к нему</li>
+              <li class="consultation__form-text consultation__icons-text"><img src="images/icon-3.svg" alt="">Проведем
+                замер помещения специалистом технологом-монтажником и доработаем эскиз с учетом проведенного замера</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="showroom">
+    <fieldset>
+      <legend>
+        <h2 class="promo__title main__title">Наш шоу-рум</h2>
+      </legend>
+      <p class="promo__text">В нашем шоу-руме представлен большой ассортимент образцов фасадов, фурнитуры, столешниц, а
+        также готовые кухни в современном и классическом стиле, наглядно демонстрирующие все удобства современной
+        мебели. Рады будем видеть вас со вторника по субботу — визит в шоу-рум по предварительной договоренности.</p>
+    </fieldset>
   </section>
 
   <footer class="footer"></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0-beta.0/dist/fancybox.umd.min.js"></script>
+  <script src="js/phone-mask.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/slick.min.js"></script>
 
