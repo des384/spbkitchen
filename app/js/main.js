@@ -10,49 +10,26 @@ appendArrows: $('.reviews__nav'),
 appendDots: $('.reviews__nav-dots'),
 prevArrow: '<span class="reviews__nav-prev"></span>',
 nextArrow: '<span class="reviews__nav-next"></span>',
+autoplay:true,
   });
 });
 /*mask telephon */
 
 $(function () {
+  $('.showroom__slide').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '.arrow__prev-room',
+    nextArrow: '.arrow__next-room',
+    centerMode: true,
+    centerPadding: '0',
+    dots: true,
+    appendDots: $('.showroom__nav-dots'),
+    autoplay:true,
+  });
 
-
-// let checkIt = true;
-// let btn = document.getElementById("btn");
-// btn.addEventListener("click", readMore);
-// function readMore() {
-// let more = document.getElementById("more");
-// if (checkIt) {
-// more.style.display = "flex";
-// btn.innerHTML = "Скрыть";
-// checkIt = false;
-// } else {
-// more.style.display = "none";
-// btn.innerHTML = "Подробнее";
-// checkIt = true;
-// }
-// }
-
-
-
-// $(".portfolio__items").each(function() {
-//     let more = $(this).find(".show-more");
-//     let hide = $(this).find(".hide-content");
-//     hide.hide();
-//     more.click(function() {
-//         hide.slideToggle();
-//         more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
-//     });
-// });
-
-
-// $(".hide-content").hide();
-// $(".show-more").click(function() {
-//     $(this).next(".hide-content").slideToggle();
-//     $(this).text($(this).text() == "Скрыть" ? "Показать еще" : "Скрыть");
-// });
-
-// var mixer = mixitup('.portfolio__items');
 
 });
 
