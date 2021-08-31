@@ -1,0 +1,87 @@
+.footer{
+    background-color: #303030;
+    padding: 54px 0 62px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo-inner{
+        margin-bottom: 30px;
+    }
+    a{
+        color: #F3F1EF;
+        transform: all .3s;
+        opacity: 1 ;
+    }
+    a:hover{
+        opacity: 0.3;
+    }
+    &__copy,
+    &__policy{
+        font-family: 'Circe';
+        font-weight: 350;
+        font-size: 18px;
+        line-height: 26px;
+        color: #fff;
+        opacity: 0.5;
+        margin-bottom: 10px;
+    }
+    &__policy:hover{
+        color: #fff;
+        opacity: 1;
+    }
+    &__menu{
+        font-family: 'Arno Pro';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #F3F1EF;
+        li{
+            margin-bottom: 20px;
+        }
+    }
+    &__col-last{
+        font-family: 'Arno Pro';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        color: #F3F1EF;
+    }
+    &__social{
+         display: flex;
+         align-items: stretch;
+         margin-bottom: 20px;
+         img{
+            margin-right: 15px;
+        }
+    }
+    &__tel{
+        font-size: 24px;
+        line-height: 24px;       
+    }
+    
+}
+
+/*Кнопка на вверх Scroll to top*/
+
+.totop{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:15px;
+    background-color: transparent;	
+    // border: 1px solid #fff;
+    // display: flex;
+    // justify-content: center;
+    transition: all .3s; 
+    cursor: pointer;
+    z-index: 50;
+      
+    
+}
+.totop:hover{
+    transform: scale(1.2);
+}
