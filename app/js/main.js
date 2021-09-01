@@ -102,9 +102,9 @@ $('document').ready(function (){
 //   input.value = ''
 // })
 
+/*кнопка стереть через крестик в поле формы */
 const resetBtn = document.querySelector('.invalid-check')
 const input = document.querySelector('.input')
-
 resetBtn.addEventListener('click', () => {
   input.value = ''
   
@@ -125,4 +125,11 @@ $( window).on('scroll',function() {
 });
 $('.totop').on('click',function(){
   $('html, body').animate({ scrollTop: 0 }, 500);
+});
+
+
+/*мобильное меню*/
+$('.menu__btn').click(function (event) {
+  $('.menu__btn,.menu').toggleClass('active');
+  $('body').toggleClass('lock');
 });

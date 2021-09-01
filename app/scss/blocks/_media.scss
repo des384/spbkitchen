@@ -1,0 +1,126 @@
+@media (max-width: 1200px){
+       
+    .menu__list-link+.menu__list-link {
+        margin-left: 20px;
+    }
+    .header__tel-box{
+        font-size: 18px;         
+    }
+    .header__phone:before{        
+        height: 12px;
+        width: 12px;        
+        margin-right: 3px;    
+    }
+}
+@media (max-width: 1060px){
+    
+    .menu__list-link+.menu__list-link {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 992px){
+body.lock {
+        overflow: hidden;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+    
+    
+    .menu__btn{
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin-left: 10px;
+        cursor: pointer; 
+        z-index: 3;                     
+        span{
+            position: absolute;
+            background-color: #CA6D38;
+            height: 2px;
+            width: 100%;
+            left: 0;
+            top: 9px;
+            transition: all 0.3s ease;
+            
+            
+      }
+    }
+    .menu__btn:before,
+    .menu__btn:after{
+        content: '';
+        background-color: #CA6D38;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+       
+    }
+    .menu__btn:before{
+        top: 0;
+    }
+    .menu__btn:after{
+        bottom: 0;
+        
+    }
+    .menu__btn.active span{    
+        transform: scale(0);
+        
+   }
+    .menu__btn.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .menu__btn.active::after{
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+    
+    .menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #454545;        
+    }
+    .menu.active{
+        top: 70px;
+        transition: all 0.3s ease 0s; 
+            
+    }
+    .menu__list{
+        display: block;
+        text-align: center;
+        
+    }
+    .menu__list-link{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        a{
+        color: #fff;
+    }
+    }
+    .menu__list-link+.menu__list-link {
+        margin-left: 0;
+    }
+    
+     
+}
+
+@media (max-width: 540px){
+    .header__tel-box{
+        display: none;
+    }
+    .mobile__tel-box{
+        display: block;
+    }
+    .logo{
+        margin: 0;
+    }
+}
