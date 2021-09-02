@@ -85,13 +85,13 @@
         cursor:pointer;
     }
     &-prev{
-        background-image: url(../../images/slick-left.svg);
+        background-image: url(../images/slick-left.svg);
         background-repeat: no-repeat;
         background-position: center center;        
     }
    
     &-next{
-        background-image: url(../../images/slick-right.svg);
+        background-image: url(../images/slick-right.svg);
         background-repeat: no-repeat;
         background-position: center center;
     }
