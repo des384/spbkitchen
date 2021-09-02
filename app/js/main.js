@@ -28,6 +28,28 @@ $(function () {
     dots: true,
     appendDots: $('.showroom__nav-dots'),
     autoplay:true,
+    responsive: [
+      {
+        breakpoint: 841,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 631,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false,
+        }
+      },
+  ]
   });
 
 

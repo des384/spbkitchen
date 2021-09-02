@@ -1,9 +1,16 @@
 .footer{
     background-color: #303030;
     padding: 54px 0 62px;
+    &__col{
+        padding: 0 10px;
+    }
+    
     &__wrapper{
         display: flex;
         justify-content: space-between;
+    }
+    &__logo-mobil{
+        display: none;
     }
     &__logo-inner{
         margin-bottom: 30px;
@@ -26,6 +33,10 @@
         opacity: 0.5;
         margin-bottom: 10px;
     }
+    &__copy{
+        max-width: 285px;
+        
+    }
     &__policy:hover{
         color: #fff;
         opacity: 1;
@@ -38,6 +49,7 @@
         color: #F3F1EF;
         li{
             margin-bottom: 20px;
+            white-space: nowrap;
         }
     }
     &__col-last{
@@ -54,10 +66,14 @@
          img{
             margin-right: 15px;
         }
+        &-text{
+            white-space: nowrap;
+        }
     }
     &__tel{
         font-size: 24px;
-        line-height: 24px;       
+        line-height: 24px;
+        white-space: nowrap;       
     }
     
 }

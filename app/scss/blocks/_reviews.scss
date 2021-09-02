@@ -1,38 +1,41 @@
 .reviews{
-   padding: 120px 0;
+   padding: 120px 0; 
+   legend{
+    margin: 0;
+   }  
 
    &__inner{         
-    width: 1150px;
+    width: 1160px;
     max-width: 100%;
-    margin: 0 auto;
-    
-    
+    margin: 0 auto;    
+   }
+   &__slider{
+       margin: 0 15px 2;
    }
    &__img-wrapper{       
-       width: 518px;
+       width: 518px;       
        height: 534px;
-       position: absolute;
-       z-index: 30;
-       right: -50px;
-       bottom: -50px;
+       margin-right: -54px;              
+       filter: drop-shadow(0px 0px 20px rgba(69, 69, 69, 0.15));
+    
        img{           
            height: 100%;
            width: 100%;
            object-fit: cover;
        }
    }
-   &__item{       
-       display: flex;
-       justify-content: space-between;      
-       box-shadow: 0px 0px 20px rgba(69, 69, 69, 0.15);
-       position: relative;
-       padding-top: 45px;       
-       &-inner{          
-        padding: 50px;
-           margin: 0 auto;
-           overflow: hidden;
-           
-       }
+   &__item-inner{ 
+    height: 532px;         
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff; 
+    box-shadow: 0px 0px 20px rgba(69, 69, 69, 0.15);
+    padding: 25px; 
+    
+ }
+   &__item{
+    display: block;    
+    padding:60px;    
        &-title{
         font-family: 'Arno Pro';
         font-weight: 300;
@@ -42,7 +45,8 @@
         margin-bottom: 15px;
        }
        &-col{
-        padding: 0px 0 60px 50px;
+        max-width: 500px;   
+        padding-right: 10px;
        }
        &-text{
         font-family: 'Circe';
@@ -51,7 +55,7 @@
         line-height: 26px;
         overflow: hidden; 
         max-height: 312px;   
-        max-width: 475px;
+        max-width: 500px;
         margin-bottom: 25px;
        }
        &-author{
@@ -60,15 +64,15 @@
         font-size: 18px;
         line-height: 26px;
        }
-   } 
+    }
 }
-
+/*стрелки навигация*/
 .reviews__nav{
     display: flex;
     justify-content: space-between;
-    max-width: 527px;
+    max-width: 508px;
     width: 100%;
-    margin-top: -23px;
+    margin-top: -36px;
     position: relative;
     z-index: 10;    
     &-container{
@@ -97,7 +101,9 @@
         // filter: drop-shadow(0px 1px 4px #ca6d38);
         transition: .3s;
     }    
-
+.slick-slide{
+    display: block;
+}
     .slick-dots{
         display: flex;          
         li{
