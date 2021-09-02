@@ -1,6 +1,6 @@
 .consultation {
     position: relative;
-    background-image: url(../../images/consultation-bg.png);
+    background-image: url(../images/consultation-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -78,7 +78,7 @@
 
     .invalid-check {
         cursor: pointer;
-        background: url("../../images/check-invalid.svg") no-repeat;
+        background: url("../images/check-invalid.svg") no-repeat;
         background-color: transparent;
         border: none;
         position: absolute;
@@ -93,7 +93,7 @@
 
 
     input.input:focus:valid {
-        background: url("../../images/check-valid.svg") no-repeat 95% 50%;
+        background: url("../images/check-valid.svg") no-repeat 95% 50%;
         background-size: 25px;
         background-color: transparent;
     }
@@ -154,7 +154,7 @@
     &::before {
         content: "";
         position: absolute;
-        background-image: url(../../images/checkbox.svg);
+        background-image: url(../images/checkbox.svg);
         background-repeat: no-repeat;
         width: 14px;
         height: 12px;
