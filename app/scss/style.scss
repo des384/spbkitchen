@@ -1,8 +1,11 @@
+@import 'slick';
+@import 'animate';
 @import 'vars';
 @import 'fonts';
 @import 'reset';
 @import 'libs';
 @import 'global';
+
 
 // * {
 //     font-family: 'Poppins', sans-serif;
@@ -98,7 +101,8 @@
     color: #181818;
     letter-spacing: 0.01em;
 }  
-    
+
+
 @import 'blocks/promo'; 
 @import 'blocks/portfolio';
 @import 'blocks/gift';
